@@ -15,7 +15,7 @@ require("catppuccin").setup({
 })
 
 -- global key remappings
-require("remap")
+require("robu3/remap")
 
 -- set color schema and other UI options
 vim.cmd.colorscheme "catppuccin-nvim"
@@ -64,8 +64,8 @@ require("nvim-tree").setup({
 })
 
 -- IDE config
-require("ide")
-require("statusline")
+require("robu3/ide")
+require("robu3/statusline")
 
 -- telescope
 local builtin = require("telescope.builtin")
@@ -82,4 +82,4 @@ vim.keymap.set("n", "<leader>lr", builtin.lsp_references, { desc = "Telescope LS
 vim.keymap.set("n", "<leader>lt", builtin.lsp_type_definitions, { desc = "Telescope LSP references" })
 
 -- dashboard
-require('dashboard')
+require("robu3/dashboard")
