@@ -6,6 +6,7 @@ vim.pack.add {
     { src = "https://github.com/nvim-lua/plenary.nvim", name = "plenary" },
     { src = "https://github.com/nvim-telescope/telescope.nvim", name = "telescope" },
     { src = "https://github.com/nvim-lualine/lualine.nvim", name = "lualine" },
+    { src = "https://github.com/nvimdev/dashboard-nvim", name = "dashboard" },
 }
 
 -- config color scheme
@@ -80,3 +81,5 @@ vim.keymap.set("n", "<leader>li", builtin.lsp_implementations, { desc = "Telesco
 vim.keymap.set("n", "<leader>lr", builtin.lsp_references, { desc = "Telescope LSP references" })
 vim.keymap.set("n", "<leader>lt", builtin.lsp_type_definitions, { desc = "Telescope LSP references" })
 
+-- dashboard
+require('dashboard')
